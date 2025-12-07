@@ -23,7 +23,7 @@ jobs:
     steps:
     # Шаг 1: Получить код из репозитория
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     
     # Шаг 2: Установить Python
     - name: Set up Python
@@ -82,7 +82,7 @@ jobs:
     # Шаг 9: Сохранить отчет как артефакт
     - name: Upload Allure Report
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: allure-report
         path: allure-report
