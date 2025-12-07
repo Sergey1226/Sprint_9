@@ -1,12 +1,12 @@
 import allure
 import pytest
 from helpers.data import TestData, Config
-
+import os
 
 @allure.feature("Создание рецепта")
 @allure.story("Создание нового рецепта")
 class TestCreateRecipe:
-    
+    @pytest.mark.skipif(os.getenv("CI") == "true", reason="Требует дополнительной настройки в CI")
     @allure.title("Тест успешного создания рецепта с изображением")
     def test_successful_recipe_creation(self, authenticated_user):
         with allure.step("Проверить авторизацию пользователя"):
