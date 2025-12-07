@@ -3,17 +3,20 @@ import allure
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from helpers.data import TestData
 from pages.main_page import MainPage
 from pages.login_page import LoginPage
 from pages.registration_page import RegistrationPage
 from pages.recipe_page import RecipePage
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
+    """
+    Хук для создания скриншота при падении теста
+    """
     outcome = yield
     rep = outcome.get_result()
     
@@ -27,7 +30,7 @@ def pytest_runtest_makereport(item, call):
             )
 
 
-pytest.fixture(scope="function")
+@pytest.fixture(scope="function")
 def driver():
     selenoid_uri = os.getenv("SELENOID_URI")
     
@@ -42,21 +45,33 @@ def driver():
     
     if selenoid_uri:
         chrome_options.add_argument("--disable-gpu")
+        
         capabilities = {
             "browserName": "chrome",
             "browserVersion": "128.0",
             "selenoid:options": {
                 "enableVNC": False,
-                "enableVideo": False
+                "enableVideo": False,
+                "enableLog": True,
+                "logName": "chrome.log",
+                "sessionTimeout": "5m",
+                "timeZone": "UTC",
+                "env": ["TZ=UTC"]
             }
         }
+        
         chrome_options.set_capability("selenoid:options", capabilities["selenoid:options"])
-        driver = webdriver.Remote(command_executor=selenoid_uri, options=chrome_options)
+        
+        driver = webdriver.Remote(
+            command_executor=selenoid_uri,
+            options=chrome_options
+        )
     else:
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
     
     driver.maximize_window()
+    
     yield driver
     
     try:
@@ -84,6 +99,7 @@ def registration_page(driver):
 
 @pytest.fixture
 def recipe_page(driver):
+
     return RecipePage(driver)
 
 
