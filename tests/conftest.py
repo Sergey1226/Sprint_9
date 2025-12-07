@@ -29,33 +29,37 @@ def pytest_runtest_makereport(item, call):
 def driver():
     selenoid_uri = os.getenv("SELENOID_URI")
     
+    chrome_options = Options()
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--window-size=1920,1080")
+    
     if selenoid_uri:
 
-        chrome_options = Options()
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--window-size=1920,1080")
         chrome_options.add_argument("--disable-gpu")
         
         capabilities = {
             "browserName": "chrome",
             "browserVersion": "128.0",
             "selenoid:options": {
-                "enableVNC": True,
-                "enableVideo": False
+                "enableVNC": False,
+                "enableVideo": False,
+                "enableLog": True,
+                "logName": "chrome.log",
+                "sessionTimeout": "5m",
+                "timeZone": "UTC",
+                "env": ["TZ=UTC"]
             }
         }
+        
+        chrome_options.set_capability("selenoid:options", capabilities["selenoid:options"])
         
         driver = webdriver.Remote(
             command_executor=selenoid_uri,
             options=chrome_options
         )
     else:
-        chrome_options = Options()
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--window-size=1920,1080")
-        
+
         driver = webdriver.Chrome(options=chrome_options)
     
     driver.maximize_window()
