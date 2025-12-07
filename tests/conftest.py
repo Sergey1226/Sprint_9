@@ -34,8 +34,12 @@ def driver():
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--window-size=1920,1080")
     
-    if selenoid_uri:
 
+    is_ci = os.getenv("CI")
+    if is_ci and not selenoid_uri:
+        chrome_options.add_argument("--headless=new")
+    
+    if selenoid_uri:
         chrome_options.add_argument("--disable-gpu")
         
         capabilities = {
@@ -59,7 +63,6 @@ def driver():
             options=chrome_options
         )
     else:
-
         driver = webdriver.Chrome(options=chrome_options)
     
     driver.maximize_window()

@@ -1,4 +1,4 @@
-name: Python Selenium Tests with Selenoid
+name: Python Selenium Tests
 
 on:
   push:
@@ -10,18 +10,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     
-    services:
-      selenoid:
-        image: aerokube/selenoid:latest-release  
-        options: >-
-          --privileged
-          -v /var/run/docker.sock:/var/run/docker.sock
-        env:
-          OVERRIDE_VIDEO_OUTPUT_DIR: /opt/selenoid/video
-          TZ: UTC
-        ports:
-          - 4444:4444
-    
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -30,6 +18,28 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
+    
+    - name: Install Chrome and dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget unzip
+        wget -q -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo apt-get install -y /tmp/chrome.deb --no-install-recommends
+        rm /tmp/chrome.deb
+        google-chrome --version
+    
+    - name: Install ChromeDriver
+      run: |
+        # Устанавливаем ChromeDriver соответствующей версии
+        CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d'.' -f1)
+        echo "Chrome version: $CHROME_VERSION"
+        
+        # Скачиваем ChromeDriver
+        wget -q "https://storage.googleapis.com/chrome-for-testing-public/$CHROME_VERSION.0.0/linux64/chromedriver-linux64.zip"
+        unzip -o chromedriver-linux64.zip
+        sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+        sudo chmod +x /usr/local/bin/chromedriver
+        chromedriver --version
     
     - name: Install dependencies
       run: |
@@ -42,49 +52,7 @@ jobs:
         sudo tar -zxvf allure-2.24.1.tgz -C /opt/
         sudo ln -s /opt/allure-2.24.1/bin/allure /usr/bin/allure
     
-    - name: Configure Selenoid
-      run: |
-        echo "Waiting for Selenoid container to start..."
-        sleep 10
-        
-        # Создаем browsers.json напрямую в контейнере
-        docker exec $(docker ps -q --filter "ancestor=aerokube/selenoid") sh -c "echo '{
-          \"chrome\": {
-            \"default\": \"128.0\",
-            \"versions\": {
-              \"128.0\": {
-                \"image\": \"selenoid/chrome:128.0\",
-                \"port\": \"4444\",
-                \"path\": \"/\"
-              }
-            }
-          }
-        }' > /etc/selenoid/browsers.json"
-        
-        # Перезапускаем Selenoid с конфигом
-        docker restart $(docker ps -q --filter "ancestor=aerokube/selenoid")
-        sleep 10
-    
-    - name: Wait for Selenoid
-      run: |
-        echo "Testing Selenoid connection..."
-        
-        for i in {1..20}; do
-          if curl -s http://localhost:4444/status > /dev/null; then
-            echo "Selenoid is ready!"
-            curl -s http://localhost:4444/status
-            exit 0
-          fi
-          echo "Attempt $i: Selenoid not ready, waiting 3 seconds..."
-          sleep 3
-        done
-        
-        echo "ERROR: Selenoid failed to start"
-        exit 1
-    
-    - name: Run tests with Selenoid
-      env:
-        SELENOID_URI: http://localhost:4444/wd/hub
+    - name: Run tests
       run: |
         pytest tests/ -v --alluredir=allure-results
     
