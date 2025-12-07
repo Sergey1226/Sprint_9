@@ -9,40 +9,22 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
-    env:
-      DOCKER_BUILDKIT: 1
     
     services:
       selenoid:
-        image: aerokube/selenoid:1.10.7  
+        image: aerokube/selenoid:latest-release  
         options: >-
           --privileged
           -v /var/run/docker.sock:/var/run/docker.sock
-          -v ${{ github.workspace }}/browsers.json:/etc/selenoid/browsers.json:ro
-          -v ${{ github.workspace }}/video:/opt/selenoid/video
-          -v ${{ github.workspace }}/logs:/opt/selenoid/logs
         env:
           OVERRIDE_VIDEO_OUTPUT_DIR: /opt/selenoid/video
           TZ: UTC
-          SUITEA_CONTAINER_LABELS: container=selenoid
         ports:
           - 4444:4444
     
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    
-    - name: Setup Docker
-      run: |
-        # Убедимся что Docker доступен
-        docker --version
-        docker ps
-    
-    - name: Pull Selenoid browser images
-      run: |
-        # Предварительно скачиваем образ браузера чтобы быстрее запускалось
-        docker pull selenoid/chrome:128.0
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -60,68 +42,51 @@ jobs:
         sudo tar -zxvf allure-2.24.1.tgz -C /opt/
         sudo ln -s /opt/allure-2.24.1/bin/allure /usr/bin/allure
     
-    - name: Create browsers.json for Selenoid
+    - name: Configure Selenoid
       run: |
-        mkdir -p video logs
-        echo '{
-          "chrome": {
-            "default": "128.0",
-            "versions": {
-              "128.0": {
-                "image": "selenoid/chrome:128.0",
-                "port": "4444",
-                "path": "/",
-                "env": ["TZ=UTC"],
-                "volumes": ["/dev/shm:/dev/shm"]
+        echo "Waiting for Selenoid container to start..."
+        sleep 10
+        
+        # Создаем browsers.json напрямую в контейнере
+        docker exec $(docker ps -q --filter "ancestor=aerokube/selenoid") sh -c "echo '{
+          \"chrome\": {
+            \"default\": \"128.0\",
+            \"versions\": {
+              \"128.0\": {
+                \"image\": \"selenoid/chrome:128.0\",
+                \"port\": \"4444\",
+                \"path\": \"/\"
               }
             }
           }
-        }' > browsers.json
-        echo "browsers.json content:"
-        cat browsers.json
+        }' > /etc/selenoid/browsers.json"
+        
+        # Перезапускаем Selenoid с конфигом
+        docker restart $(docker ps -q --filter "ancestor=aerokube/selenoid")
+        sleep 10
     
     - name: Wait for Selenoid
       run: |
-        echo "🚀 Starting Selenoid wait..."
-        echo "Checking Docker..."
-        docker ps
-        
-        echo "Waiting 25 seconds for Selenoid to fully start..."
-        sleep 25
-        
         echo "Testing Selenoid connection..."
-        MAX_RETRIES=15
-        RETRY_DELAY=5
         
-        for i in $(seq 1 $MAX_RETRIES); do
-          echo "Attempt $i/$MAX_RETRIES..."
-          if curl -s -f http://localhost:4444/status > /dev/null; then
-            echo "✅ Selenoid is ready and responding!"
-            echo "Selenoid status:"
-            curl -s http://localhost:4444/status | python3 -m json.tool
+        for i in {1..20}; do
+          if curl -s http://localhost:4444/status > /dev/null; then
+            echo "Selenoid is ready!"
+            curl -s http://localhost:4444/status
             exit 0
-          else
-            echo "⏳ Selenoid not ready yet, waiting $RETRY_DELAY seconds..."
-            sleep $RETRY_DELAY
           fi
+          echo "Attempt $i: Selenoid not ready, waiting 3 seconds..."
+          sleep 3
         done
         
-        echo "❌ Selenoid failed to start after $MAX_RETRIES attempts"
-        echo "Debug info:"
-        docker logs selenoid 2>&1 | tail -50
+        echo "ERROR: Selenoid failed to start"
         exit 1
     
     - name: Run tests with Selenoid
       env:
         SELENOID_URI: http://localhost:4444/wd/hub
       run: |
-        echo "🔧 Environment:"
-        echo "SELENOID_URI: $SELENOID_URI"
-        echo "CI: $CI"
-        
-        echo "🚀 Running tests with Selenoid..."
-        # Запускаем с подробным выводом
-        pytest tests/ -v -s --tb=short --alluredir=allure-results
+        pytest tests/ -v --alluredir=allure-results
     
     - name: Generate Allure Report
       if: always()
@@ -135,12 +100,3 @@ jobs:
         name: allure-report
         path: allure-report
         retention-days: 30
-    
-    - name: Upload Selenoid logs on failure
-      if: failure()
-      uses: actions/upload-artifact@v4
-      with:
-        name: selenoid-logs
-        path: |
-          logs/
-          video/
