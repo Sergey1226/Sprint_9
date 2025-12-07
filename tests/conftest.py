@@ -3,8 +3,6 @@ import allure
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from helpers.data import TestData
 from pages.main_page import MainPage
 from pages.login_page import LoginPage
@@ -14,9 +12,6 @@ from pages.recipe_page import RecipePage
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
-    """
-    Хук для создания скриншота при падении теста
-    """
     outcome = yield
     rep = outcome.get_result()
     
@@ -39,6 +34,7 @@ def driver():
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--window-size=1920,1080")
     
+    # В CI используем headless
     is_ci = os.getenv("CI")
     if is_ci and not selenoid_uri:
         chrome_options.add_argument("--headless=new")
@@ -67,8 +63,8 @@ def driver():
             options=chrome_options
         )
     else:
-        service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=chrome_options)
+        # Простой Chrome - ChromeDriver уже установлен в CI
+        driver = webdriver.Chrome(options=chrome_options)
     
     driver.maximize_window()
     
@@ -99,7 +95,6 @@ def registration_page(driver):
 
 @pytest.fixture
 def recipe_page(driver):
-
     return RecipePage(driver)
 
 
