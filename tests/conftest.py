@@ -8,6 +8,8 @@ from pages.main_page import MainPage
 from pages.login_page import LoginPage
 from pages.registration_page import RegistrationPage
 from pages.recipe_page import RecipePage
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
@@ -25,7 +27,7 @@ def pytest_runtest_makereport(item, call):
             )
 
 
-@pytest.fixture(scope="function")
+pytest.fixture(scope="function")
 def driver():
     selenoid_uri = os.getenv("SELENOID_URI")
     
@@ -34,39 +36,27 @@ def driver():
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--window-size=1920,1080")
     
-
     is_ci = os.getenv("CI")
     if is_ci and not selenoid_uri:
         chrome_options.add_argument("--headless=new")
     
     if selenoid_uri:
         chrome_options.add_argument("--disable-gpu")
-        
         capabilities = {
             "browserName": "chrome",
             "browserVersion": "128.0",
             "selenoid:options": {
                 "enableVNC": False,
-                "enableVideo": False,
-                "enableLog": True,
-                "logName": "chrome.log",
-                "sessionTimeout": "5m",
-                "timeZone": "UTC",
-                "env": ["TZ=UTC"]
+                "enableVideo": False
             }
         }
-        
         chrome_options.set_capability("selenoid:options", capabilities["selenoid:options"])
-        
-        driver = webdriver.Remote(
-            command_executor=selenoid_uri,
-            options=chrome_options
-        )
+        driver = webdriver.Remote(command_executor=selenoid_uri, options=chrome_options)
     else:
-        driver = webdriver.Chrome(options=chrome_options)
+        service = Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=chrome_options)
     
     driver.maximize_window()
-    
     yield driver
     
     try:
