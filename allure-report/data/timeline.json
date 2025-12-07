@@ -1,0 +1,49 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-R7VCIFF",
+    "children" : [ {
+      "name" : "4748-MainThread",
+      "children" : [ {
+        "name" : "Тест успешной регистрации нового пользователя",
+        "uid" : "a3727e6061001191",
+        "parentUid" : "2fc0416eefb0024fa93d9c07cc52b87f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765146839710,
+          "stop" : 1765146840785,
+          "duration" : 1075
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест успешной авторизации пользователя",
+        "uid" : "365b226c9c021b5e",
+        "parentUid" : "2fc0416eefb0024fa93d9c07cc52b87f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765146814596,
+          "stop" : 1765146815443,
+          "duration" : 847
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест успешного создания рецепта с изображением",
+        "uid" : "1e30c79c9182a6f2",
+        "parentUid" : "2fc0416eefb0024fa93d9c07cc52b87f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765146829083,
+          "stop" : 1765146831409,
+          "duration" : 2326
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2fc0416eefb0024fa93d9c07cc52b87f"
+    } ],
+    "uid" : "1e20140f3d675ad8fcb1d0d945228112"
+  } ]
+}

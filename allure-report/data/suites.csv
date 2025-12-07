@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Dec 08 01:33:59 MSK 2025","Mon Dec 08 01:34:00 MSK 2025","1075","tests.test_cases","test_registration","TestRegistration","","","Тест успешной регистрации нового пользователя",""
+"passed","Mon Dec 08 01:33:34 MSK 2025","Mon Dec 08 01:33:35 MSK 2025","847","tests.test_cases","test_authorization","TestAuthorization","","","Тест успешной авторизации пользователя",""
+"passed","Mon Dec 08 01:33:49 MSK 2025","Mon Dec 08 01:33:51 MSK 2025","2326","tests.test_cases","test_create_recipe","TestCreateRecipe","","","Тест успешного создания рецепта с изображением",""

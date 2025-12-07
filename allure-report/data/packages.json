@@ -1,0 +1,57 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests.test_cases",
+    "children" : [ {
+      "name" : "test_authorization",
+      "children" : [ {
+        "name" : "Тест успешной авторизации пользователя",
+        "uid" : "365b226c9c021b5e",
+        "parentUid" : "7b6f57954584b9139c9a3131e1cc4b3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765146814596,
+          "stop" : 1765146815443,
+          "duration" : 847
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7b6f57954584b9139c9a3131e1cc4b3f"
+    }, {
+      "name" : "test_create_recipe",
+      "children" : [ {
+        "name" : "Тест успешного создания рецепта с изображением",
+        "uid" : "1e30c79c9182a6f2",
+        "parentUid" : "d500a8536db8edf15eb763b90080196a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765146829083,
+          "stop" : 1765146831409,
+          "duration" : 2326
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d500a8536db8edf15eb763b90080196a"
+    }, {
+      "name" : "test_registration",
+      "children" : [ {
+        "name" : "Тест успешной регистрации нового пользователя",
+        "uid" : "a3727e6061001191",
+        "parentUid" : "935e1e2023148e1efa29117cd48ef471",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765146839710,
+          "stop" : 1765146840785,
+          "duration" : 1075
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "935e1e2023148e1efa29117cd48ef471"
+    } ],
+    "uid" : "tests.test_cases"
+  } ]
+}

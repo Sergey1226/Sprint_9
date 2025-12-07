@@ -1,0 +1,680 @@
+{
+  "uid" : "a3727e6061001191",
+  "name" : "Тест успешной регистрации нового пользователя",
+  "fullName" : "tests.test_cases.test_registration.TestRegistration#test_successful_registration",
+  "historyId" : "fe737ac51f2e4c6426000eceeb6bb465",
+  "time" : {
+    "start" : 1765146839710,
+    "stop" : 1765146840785,
+    "duration" : 1075
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "allure_environment",
+    "time" : {
+      "start" : 1765146837599,
+      "stop" : 1765146837599,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "main_page",
+    "time" : {
+      "start" : 1765146839020,
+      "stop" : 1765146839709,
+      "duration" : 689
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть страницу None",
+      "time" : {
+        "start" : 1765146839020,
+        "stop" : 1765146839709,
+        "duration" : 689
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ждать загрузки страницы",
+        "time" : {
+          "start" : 1765146839701,
+          "stop" : 1765146839709,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "timeout",
+          "value" : "10"
+        } ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "None"
+      } ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1765146837599,
+      "stop" : 1765146839020,
+      "duration" : 1421
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "registration_page",
+    "time" : {
+      "start" : 1765146839709,
+      "stop" : 1765146839709,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Нажать кнопку «Создать аккаунт»",
+      "time" : {
+        "start" : 1765146839710,
+        "stop" : 1765146839800,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Нажать кнопку 'Создать аккаунт' в хедере",
+        "time" : {
+          "start" : 1765146839710,
+          "stop" : 1765146839800,
+          "duration" : 90
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Кликнуть по элементу: ('xpath', \"//a[text()='Создать аккаунт']\")",
+          "time" : {
+            "start" : 1765146839710,
+            "stop" : 1765146839800,
+            "duration" : 90
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти кликабельный элемент: ('xpath', \"//a[text()='Создать аккаунт']\")",
+            "time" : {
+              "start" : 1765146839710,
+              "stop" : 1765146839744,
+              "duration" : 34
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//a[text()='Создать аккаунт']\")"
+            }, {
+              "name" : "timeout",
+              "value" : "None"
+            } ],
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//a[text()='Создать аккаунт']\")"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3
+    }, {
+      "name" : "Заполнить все поля формы регистрации",
+      "time" : {
+        "start" : 1765146839800,
+        "stop" : 1765146840192,
+        "duration" : 392
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Заполнить всю форму регистрации",
+        "time" : {
+          "start" : 1765146839800,
+          "stop" : 1765146840192,
+          "duration" : 392
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Заполнить поле ('xpath', \"//input[@name='first_name']\") значением: 'Иван'",
+          "time" : {
+            "start" : 1765146839800,
+            "stop" : 1765146839890,
+            "duration" : 90
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='first_name']\")",
+            "time" : {
+              "start" : 1765146839800,
+              "stop" : 1765146839826,
+              "duration" : 26
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//input[@name='first_name']\")"
+            }, {
+              "name" : "timeout",
+              "value" : "None"
+            } ],
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//input[@name='first_name']\")"
+          }, {
+            "name" : "text",
+            "value" : "'Иван'"
+          }, {
+            "name" : "clear",
+            "value" : "True"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        }, {
+          "name" : "Заполнить поле ('xpath', \"//input[@name='last_name']\") значением: 'Тестов'",
+          "time" : {
+            "start" : 1765146839890,
+            "stop" : 1765146839967,
+            "duration" : 77
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='last_name']\")",
+            "time" : {
+              "start" : 1765146839890,
+              "stop" : 1765146839910,
+              "duration" : 20
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//input[@name='last_name']\")"
+            }, {
+              "name" : "timeout",
+              "value" : "None"
+            } ],
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//input[@name='last_name']\")"
+          }, {
+            "name" : "text",
+            "value" : "'Тестов'"
+          }, {
+            "name" : "clear",
+            "value" : "True"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        }, {
+          "name" : "Заполнить поле ('xpath', \"//input[@name='username']\") значением: 'test_user_qtxwcj'",
+          "time" : {
+            "start" : 1765146839967,
+            "stop" : 1765146840048,
+            "duration" : 81
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='username']\")",
+            "time" : {
+              "start" : 1765146839967,
+              "stop" : 1765146839990,
+              "duration" : 23
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//input[@name='username']\")"
+            }, {
+              "name" : "timeout",
+              "value" : "None"
+            } ],
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//input[@name='username']\")"
+          }, {
+            "name" : "text",
+            "value" : "'test_user_qtxwcj'"
+          }, {
+            "name" : "clear",
+            "value" : "True"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        }, {
+          "name" : "Заполнить поле ('xpath', \"//input[@name='email']\") значением: 'test_qtxwcj@example.com'",
+          "time" : {
+            "start" : 1765146840049,
+            "stop" : 1765146840124,
+            "duration" : 75
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='email']\")",
+            "time" : {
+              "start" : 1765146840049,
+              "stop" : 1765146840065,
+              "duration" : 16
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//input[@name='email']\")"
+            }, {
+              "name" : "timeout",
+              "value" : "None"
+            } ],
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//input[@name='email']\")"
+          }, {
+            "name" : "text",
+            "value" : "'test_qtxwcj@example.com'"
+          }, {
+            "name" : "clear",
+            "value" : "True"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        }, {
+          "name" : "Заполнить поле ('xpath', \"//input[@name='password']\") значением: 'TestPass123!'",
+          "time" : {
+            "start" : 1765146840124,
+            "stop" : 1765146840192,
+            "duration" : 68
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='password']\")",
+            "time" : {
+              "start" : 1765146840124,
+              "stop" : 1765146840146,
+              "duration" : 22
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//input[@name='password']\")"
+            }, {
+              "name" : "timeout",
+              "value" : "None"
+            } ],
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//input[@name='password']\")"
+          }, {
+            "name" : "text",
+            "value" : "'TestPass123!'"
+          }, {
+            "name" : "clear",
+            "value" : "True"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "user_data",
+          "value" : "UserData(username='test_user_qtxwcj', email='test_qtxwcj@example.com', password='TestPass123!', first_name='Иван', last_name='Тестов')"
+        } ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 10
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 11
+    }, {
+      "name" : "Нажать кнопку «Создать аккаунт»",
+      "time" : {
+        "start" : 1765146840192,
+        "stop" : 1765146840237,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Нажать кнопку 'Создать аккаунт'",
+        "time" : {
+          "start" : 1765146840192,
+          "stop" : 1765146840237,
+          "duration" : 45
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Кликнуть по элементу: ('xpath', \"//button[text()='Создать аккаунт']\")",
+          "time" : {
+            "start" : 1765146840192,
+            "stop" : 1765146840237,
+            "duration" : 45
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти кликабельный элемент: ('xpath', \"//button[text()='Создать аккаунт']\")",
+            "time" : {
+              "start" : 1765146840192,
+              "stop" : 1765146840215,
+              "duration" : 23
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//button[text()='Создать аккаунт']\")"
+            }, {
+              "name" : "timeout",
+              "value" : "None"
+            } ],
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//button[text()='Создать аккаунт']\")"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3
+    }, {
+      "name" : "Проверить переход на страницу авторизации",
+      "time" : {
+        "start" : 1765146840237,
+        "stop" : 1765146840770,
+        "duration" : 533
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ждать обновления URL",
+        "time" : {
+          "start" : 1765146840237,
+          "stop" : 1765146840768,
+          "duration" : 531
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "initial_url",
+          "value" : "'https://foodgram-frontend-1.prakticum-team.ru/signup'"
+        }, {
+          "name" : "timeout",
+          "value" : "None"
+        } ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Получить текущий URL",
+        "time" : {
+          "start" : 1765146840768,
+          "stop" : 1765146840770,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2
+    }, {
+      "name" : "Проверить отображение формы авторизации",
+      "time" : {
+        "start" : 1765146840770,
+        "stop" : 1765146840785,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Проверить видимость формы авторизации",
+        "time" : {
+          "start" : 1765146840770,
+          "stop" : 1765146840785,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Проверить видимость элемента: ('xpath', \"//button[text()='Войти']\")",
+          "time" : {
+            "start" : 1765146840770,
+            "stop" : 1765146840785,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//button[text()='Войти']\")"
+          }, {
+            "name" : "timeout",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 26
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1765146840785,
+      "stop" : 1765146842935,
+      "duration" : 2150
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Регистрация"
+  }, {
+    "name" : "story",
+    "value" : "Создание нового аккаунта"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_registration"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegistration"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-R7VCIFF"
+  }, {
+    "name" : "thread",
+    "value" : "4748-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cases.test_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a3727e6061001191.json",
+  "parameterValues" : [ ]
+}
