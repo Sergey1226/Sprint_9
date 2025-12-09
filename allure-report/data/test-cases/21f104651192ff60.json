@@ -1,37 +1,52 @@
 {
-  "uid" : "365b226c9c021b5e",
+  "uid" : "21f104651192ff60",
   "name" : "Тест успешной авторизации пользователя",
   "fullName" : "tests.test_cases.test_authorization.TestAuthorization#test_successful_login",
   "historyId" : "a5b3b7b018e41c8b05c70554eebf1fc9",
   "time" : {
-    "start" : 1765146814596,
-    "stop" : 1765146815443,
-    "duration" : 847
+    "start" : 1765297293946,
+    "stop" : 1765297295301,
+    "duration" : 1355
   },
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
+    "name" : "login_page",
+    "time" : {
+      "start" : 1765297293946,
+      "stop" : 1765297293946,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
     "name" : "main_page",
     "time" : {
-      "start" : 1765146814088,
-      "stop" : 1765146814596,
-      "duration" : 508
+      "start" : 1765297293394,
+      "stop" : 1765297293946,
+      "duration" : 552
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Открыть страницу None",
       "time" : {
-        "start" : 1765146814088,
-        "stop" : 1765146814596,
-        "duration" : 508
+        "start" : 1765297293394,
+        "stop" : 1765297293946,
+        "duration" : 552
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Ждать загрузки страницы",
         "time" : {
-          "start" : 1765146814591,
-          "stop" : 1765146814596,
-          "duration" : 5
+          "start" : 1765297293935,
+          "stop" : 1765297293946,
+          "duration" : 11
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,105 +55,90 @@
           "name" : "timeout",
           "value" : "10"
         } ],
+        "stepsCount" : 0,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 0
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
         "value" : "None"
       } ],
+      "stepsCount" : 1,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 1
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 2,
     "hasContent" : true,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 2
+    "shouldDisplayMessage" : false
   }, {
     "name" : "allure_environment",
     "time" : {
-      "start" : 1765146812470,
-      "stop" : 1765146812470,
+      "start" : 1765297291792,
+      "stop" : 1765297291792,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0
+    "shouldDisplayMessage" : false
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1765146812470,
-      "stop" : 1765146814088,
-      "duration" : 1618
+      "start" : 1765297291792,
+      "stop" : 1765297293394,
+      "duration" : 1602
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0
-  }, {
-    "name" : "login_page",
-    "time" : {
-      "start" : 1765146814596,
-      "stop" : 1765146814596,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : false,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0
+    "shouldDisplayMessage" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Нажать кнопку «Войти» на главной странице",
       "time" : {
-        "start" : 1765146814596,
-        "stop" : 1765146814678,
-        "duration" : 82
+        "start" : 1765297293946,
+        "stop" : 1765297294037,
+        "duration" : 91
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Нажать кнопку 'Войти' в хедере",
         "time" : {
-          "start" : 1765146814596,
-          "stop" : 1765146814678,
-          "duration" : 82
+          "start" : 1765297293946,
+          "stop" : 1765297294037,
+          "duration" : 91
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Кликнуть по элементу: ('xpath', \"//a[text()='Войти']\")",
           "time" : {
-            "start" : 1765146814596,
-            "stop" : 1765146814678,
-            "duration" : 82
+            "start" : 1765297293946,
+            "stop" : 1765297294037,
+            "duration" : 91
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Найти кликабельный элемент: ('xpath', \"//a[text()='Войти']\")",
             "time" : {
-              "start" : 1765146814596,
-              "stop" : 1765146814628,
-              "duration" : 32
+              "start" : 1765297293946,
+              "stop" : 1765297293986,
+              "duration" : 40
             },
             "status" : "passed",
             "steps" : [ ],
@@ -150,63 +150,63 @@
               "name" : "timeout",
               "value" : "None"
             } ],
+            "stepsCount" : 0,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 0
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "locator",
             "value" : "('xpath', \"//a[text()='Войти']\")"
           } ],
+          "stepsCount" : 1,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 1
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 2,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 2
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 3,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 3
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Заполнить все поля формы авторизации",
       "time" : {
-        "start" : 1765146814678,
-        "stop" : 1765146814899,
-        "duration" : 221
+        "start" : 1765297294037,
+        "stop" : 1765297294252,
+        "duration" : 215
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Выполнить авторизацию",
         "time" : {
-          "start" : 1765146814678,
-          "stop" : 1765146814899,
-          "duration" : 221
+          "start" : 1765297294037,
+          "stop" : 1765297294252,
+          "duration" : 215
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Заполнить поле ('xpath', \"//input[@name='email']\") значением: 'TestFN'",
           "time" : {
-            "start" : 1765146814678,
-            "stop" : 1765146814768,
-            "duration" : 90
+            "start" : 1765297294037,
+            "stop" : 1765297294125,
+            "duration" : 88
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='email']\")",
             "time" : {
-              "start" : 1765146814678,
-              "stop" : 1765146814701,
+              "start" : 1765297294037,
+              "stop" : 1765297294060,
               "duration" : 23
             },
             "status" : "passed",
@@ -219,10 +219,10 @@
               "name" : "timeout",
               "value" : "None"
             } ],
+            "stepsCount" : 0,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 0
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
@@ -235,24 +235,24 @@
             "name" : "clear",
             "value" : "True"
           } ],
+          "stepsCount" : 1,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 1
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Заполнить поле ('xpath', \"//input[@name='password']\") значением: '78787878jk'",
           "time" : {
-            "start" : 1765146814768,
-            "stop" : 1765146814841,
-            "duration" : 73
+            "start" : 1765297294125,
+            "stop" : 1765297294197,
+            "duration" : 72
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='password']\")",
             "time" : {
-              "start" : 1765146814768,
-              "stop" : 1765146814786,
-              "duration" : 18
+              "start" : 1765297294125,
+              "stop" : 1765297294144,
+              "duration" : 19
             },
             "status" : "passed",
             "steps" : [ ],
@@ -264,10 +264,10 @@
               "name" : "timeout",
               "value" : "None"
             } ],
+            "stepsCount" : 0,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 0
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
@@ -280,24 +280,24 @@
             "name" : "clear",
             "value" : "True"
           } ],
+          "stepsCount" : 1,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 1
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Кликнуть по элементу: ('xpath', \"//button[text()='Войти']\")",
           "time" : {
-            "start" : 1765146814841,
-            "stop" : 1765146814899,
-            "duration" : 58
+            "start" : 1765297294197,
+            "stop" : 1765297294252,
+            "duration" : 55
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Найти кликабельный элемент: ('xpath', \"//button[text()='Войти']\")",
             "time" : {
-              "start" : 1765146814841,
-              "stop" : 1765146814861,
-              "duration" : 20
+              "start" : 1765297294197,
+              "stop" : 1765297294218,
+              "duration" : 21
             },
             "status" : "passed",
             "steps" : [ ],
@@ -309,20 +309,20 @@
               "name" : "timeout",
               "value" : "None"
             } ],
+            "stepsCount" : 0,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 0
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "locator",
             "value" : "('xpath', \"//button[text()='Войти']\")"
           } ],
+          "stepsCount" : 1,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 1
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
@@ -332,39 +332,39 @@
           "name" : "password",
           "value" : "'78787878jk'"
         } ],
+        "stepsCount" : 6,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 6
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 7,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 7
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Проверить успешную авторизацию",
       "time" : {
-        "start" : 1765146814899,
-        "stop" : 1765146815422,
-        "duration" : 523
+        "start" : 1765297294252,
+        "stop" : 1765297295280,
+        "duration" : 1028
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Проверить успешную авторизацию",
         "time" : {
-          "start" : 1765146814899,
-          "stop" : 1765146815422,
-          "duration" : 523
+          "start" : 1765297294252,
+          "stop" : 1765297295280,
+          "duration" : 1028
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Ждать обновления URL",
           "time" : {
-            "start" : 1765146814899,
-            "stop" : 1765146815412,
-            "duration" : 513
+            "start" : 1765297294252,
+            "stop" : 1765297295275,
+            "duration" : 1023
           },
           "status" : "passed",
           "steps" : [ ],
@@ -376,61 +376,61 @@
             "name" : "timeout",
             "value" : "None"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Получить текущий URL",
           "time" : {
-            "start" : 1765146815412,
-            "stop" : 1765146815422,
-            "duration" : 10
+            "start" : 1765297295275,
+            "stop" : 1765297295280,
+            "duration" : 5
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
+          "stepsCount" : 0,
           "hasContent" : false,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 2,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 2
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 3,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 3
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Проверить отображение кнопки «Выход»",
       "time" : {
-        "start" : 1765146815422,
-        "stop" : 1765146815443,
+        "start" : 1765297295280,
+        "stop" : 1765297295301,
         "duration" : 21
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Проверить видимость кнопки 'Выход'",
         "time" : {
-          "start" : 1765146815422,
-          "stop" : 1765146815442,
-          "duration" : 20
+          "start" : 1765297295280,
+          "stop" : 1765297295301,
+          "duration" : 21
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Проверить видимость элемента: ('xpath', \"//a[text()='Выход']\")",
           "time" : {
-            "start" : 1765146815422,
-            "stop" : 1765146815442,
-            "duration" : 20
+            "start" : 1765297295280,
+            "stop" : 1765297295301,
+            "duration" : 21
           },
           "status" : "passed",
           "steps" : [ ],
@@ -442,47 +442,47 @@
             "name" : "timeout",
             "value" : "5"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 2,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 19,
     "hasContent" : true,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 19
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1765146815445,
-      "stop" : 1765146817574,
-      "duration" : 2129
+      "start" : 1765297295304,
+      "stop" : 1765297297457,
+      "duration" : 2153
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0
+    "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
     "name" : "story",
@@ -504,7 +504,7 @@
     "value" : "DESKTOP-R7VCIFF"
   }, {
     "name" : "thread",
-    "value" : "4748-MainThread"
+    "value" : "13892-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -528,6 +528,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "365b226c9c021b5e.json",
+  "source" : "21f104651192ff60.json",
   "parameterValues" : [ ]
 }

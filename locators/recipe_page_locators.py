@@ -19,3 +19,6 @@ class RecipePageLocators:
     # ПОСЛЕ СОЗДАНИЯ
     RECIPE_TITLE = (By.XPATH, "//h1[contains(@class, 'styles_single-card__title__2QMPq')]")
     RECIPE_CARD = (By.XPATH, "//div[contains(@class, 'styles_single-card__1yTTj')]")
+    
+    # ФАЙЛОВЫЙ ИНПУТ
+    FILE_INPUT = (By.XPATH, "//input[@type='file']")

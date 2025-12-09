@@ -1,52 +1,67 @@
 {
-  "uid" : "1e30c79c9182a6f2",
+  "uid" : "572b51a06af213e1",
   "name" : "Тест успешного создания рецепта с изображением",
   "fullName" : "tests.test_cases.test_create_recipe.TestCreateRecipe#test_successful_recipe_creation",
   "historyId" : "5335abc68814206001dc582dbcd39030",
   "time" : {
-    "start" : 1765146829083,
-    "stop" : 1765146831409,
-    "duration" : 2326
+    "start" : 1765297308906,
+    "stop" : 1765297311742,
+    "duration" : 2836
   },
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1765146821631,
-      "stop" : 1765146823021,
-      "duration" : 1390
+      "start" : 1765297301531,
+      "stop" : 1765297302896,
+      "duration" : 1365
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "allure_environment",
+    "time" : {
+      "start" : 1765297301531,
+      "stop" : 1765297301531,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   }, {
     "name" : "authenticated_user",
     "time" : {
-      "start" : 1765146823021,
-      "stop" : 1765146829083,
-      "duration" : 6062
+      "start" : 1765297302896,
+      "stop" : 1765297308905,
+      "duration" : 6009
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Открыть страницу None",
       "time" : {
-        "start" : 1765146823021,
-        "stop" : 1765146823627,
-        "duration" : 606
+        "start" : 1765297302896,
+        "stop" : 1765297303446,
+        "duration" : 550
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Ждать загрузки страницы",
         "time" : {
-          "start" : 1765146823612,
-          "stop" : 1765146823627,
-          "duration" : 15
+          "start" : 1765297303446,
+          "stop" : 1765297303446,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -55,42 +70,42 @@
           "name" : "timeout",
           "value" : "10"
         } ],
+        "stepsCount" : 0,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 0
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
         "value" : "None"
       } ],
+      "stepsCount" : 1,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 1
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Проверить, что пользователь авторизован",
       "time" : {
-        "start" : 1765146823627,
-        "stop" : 1765146828783,
-        "duration" : 5156
+        "start" : 1765297303446,
+        "stop" : 1765297308598,
+        "duration" : 5152
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Проверить видимость кнопки 'Выход'",
         "time" : {
-          "start" : 1765146823627,
-          "stop" : 1765146828783,
-          "duration" : 5156
+          "start" : 1765297303446,
+          "stop" : 1765297308598,
+          "duration" : 5152
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Проверить видимость элемента: ('xpath', \"//a[text()='Выход']\")",
           "time" : {
-            "start" : 1765146823627,
-            "stop" : 1765146828783,
-            "duration" : 5156
+            "start" : 1765297303446,
+            "stop" : 1765297308598,
+            "duration" : 5152
           },
           "status" : "passed",
           "steps" : [ ],
@@ -102,46 +117,46 @@
             "name" : "timeout",
             "value" : "5"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 2,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Нажать кнопку 'Войти' в хедере",
       "time" : {
-        "start" : 1765146828783,
-        "stop" : 1765146828879,
-        "duration" : 96
+        "start" : 1765297308598,
+        "stop" : 1765297308706,
+        "duration" : 108
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Кликнуть по элементу: ('xpath', \"//a[text()='Войти']\")",
         "time" : {
-          "start" : 1765146828783,
-          "stop" : 1765146828879,
-          "duration" : 96
+          "start" : 1765297308598,
+          "stop" : 1765297308706,
+          "duration" : 108
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Найти кликабельный элемент: ('xpath', \"//a[text()='Войти']\")",
           "time" : {
-            "start" : 1765146828783,
-            "stop" : 1765146828820,
-            "duration" : 37
+            "start" : 1765297308598,
+            "stop" : 1765297308636,
+            "duration" : 38
           },
           "status" : "passed",
           "steps" : [ ],
@@ -153,49 +168,49 @@
             "name" : "timeout",
             "value" : "None"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "locator",
           "value" : "('xpath', \"//a[text()='Войти']\")"
         } ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 2,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Выполнить авторизацию",
       "time" : {
-        "start" : 1765146828879,
-        "stop" : 1765146829083,
-        "duration" : 204
+        "start" : 1765297308706,
+        "stop" : 1765297308905,
+        "duration" : 199
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Заполнить поле ('xpath', \"//input[@name='email']\") значением: 'TestFN'",
         "time" : {
-          "start" : 1765146828880,
-          "stop" : 1765146828963,
-          "duration" : 83
+          "start" : 1765297308706,
+          "stop" : 1765297308786,
+          "duration" : 80
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='email']\")",
           "time" : {
-            "start" : 1765146828880,
-            "stop" : 1765146828904,
-            "duration" : 24
+            "start" : 1765297308706,
+            "stop" : 1765297308728,
+            "duration" : 22
           },
           "status" : "passed",
           "steps" : [ ],
@@ -207,10 +222,10 @@
             "name" : "timeout",
             "value" : "None"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
@@ -223,23 +238,23 @@
           "name" : "clear",
           "value" : "True"
         } ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       }, {
         "name" : "Заполнить поле ('xpath', \"//input[@name='password']\") значением: '78787878jk'",
         "time" : {
-          "start" : 1765146828963,
-          "stop" : 1765146829030,
-          "duration" : 67
+          "start" : 1765297308786,
+          "stop" : 1765297308851,
+          "duration" : 65
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Найти кликабельный элемент: ('xpath', \"//input[@name='password']\")",
           "time" : {
-            "start" : 1765146828963,
-            "stop" : 1765146828981,
+            "start" : 1765297308786,
+            "stop" : 1765297308804,
             "duration" : 18
           },
           "status" : "passed",
@@ -252,10 +267,10 @@
             "name" : "timeout",
             "value" : "None"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
@@ -268,24 +283,24 @@
           "name" : "clear",
           "value" : "True"
         } ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       }, {
         "name" : "Кликнуть по элементу: ('xpath', \"//button[text()='Войти']\")",
         "time" : {
-          "start" : 1765146829030,
-          "stop" : 1765146829083,
-          "duration" : 53
+          "start" : 1765297308851,
+          "stop" : 1765297308905,
+          "duration" : 54
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Найти кликабельный элемент: ('xpath', \"//button[text()='Войти']\")",
           "time" : {
-            "start" : 1765146829030,
-            "stop" : 1765146829048,
-            "duration" : 18
+            "start" : 1765297308851,
+            "stop" : 1765297308871,
+            "duration" : 20
           },
           "status" : "passed",
           "steps" : [ ],
@@ -297,20 +312,20 @@
             "name" : "timeout",
             "value" : "None"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "locator",
           "value" : "('xpath', \"//button[text()='Войти']\")"
         } ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ {
@@ -320,65 +335,50 @@
         "name" : "password",
         "value" : "'78787878jk'"
       } ],
+      "stepsCount" : 6,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 6
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 15,
     "hasContent" : true,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 15
-  }, {
-    "name" : "allure_environment",
-    "time" : {
-      "start" : 1765146821631,
-      "stop" : 1765146821631,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : false,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0
+    "shouldDisplayMessage" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Проверить авторизацию пользователя",
       "time" : {
-        "start" : 1765146829083,
-        "stop" : 1765146829610,
-        "duration" : 527
+        "start" : 1765297308906,
+        "stop" : 1765297309436,
+        "duration" : 530
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Проверить, что пользователь авторизован",
         "time" : {
-          "start" : 1765146829084,
-          "stop" : 1765146829610,
-          "duration" : 526
+          "start" : 1765297308906,
+          "stop" : 1765297309436,
+          "duration" : 530
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Проверить видимость кнопки 'Выход'",
           "time" : {
-            "start" : 1765146829084,
-            "stop" : 1765146829610,
-            "duration" : 526
+            "start" : 1765297308906,
+            "stop" : 1765297309436,
+            "duration" : 530
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Проверить видимость элемента: ('xpath', \"//a[text()='Выход']\")",
             "time" : {
-              "start" : 1765146829084,
-              "stop" : 1765146829610,
-              "duration" : 526
+              "start" : 1765297308906,
+              "stop" : 1765297309436,
+              "duration" : 530
             },
             "status" : "passed",
             "steps" : [ ],
@@ -390,69 +390,69 @@
               "name" : "timeout",
               "value" : "5"
             } ],
+            "stepsCount" : 0,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 0
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
+          "stepsCount" : 1,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 1
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 2,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 2
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 3,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 3
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Перейти на страницу создания рецепта",
       "time" : {
-        "start" : 1765146829610,
-        "stop" : 1765146829684,
-        "duration" : 74
+        "start" : 1765297309436,
+        "stop" : 1765297309515,
+        "duration" : 79
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Перейти на страницу создания рецепта",
         "time" : {
-          "start" : 1765146829610,
-          "stop" : 1765146829681,
+          "start" : 1765297309436,
+          "stop" : 1765297309507,
           "duration" : 71
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Нажать кнопку 'Создать рецепт' в хедере",
           "time" : {
-            "start" : 1765146829610,
-            "stop" : 1765146829681,
+            "start" : 1765297309436,
+            "stop" : 1765297309507,
             "duration" : 71
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Кликнуть по элементу: ('xpath', \"//a[text()='Создать рецепт']\")",
             "time" : {
-              "start" : 1765146829610,
-              "stop" : 1765146829681,
+              "start" : 1765297309436,
+              "stop" : 1765297309507,
               "duration" : 71
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//a[text()='Создать рецепт']\")",
               "time" : {
-                "start" : 1765146829610,
-                "stop" : 1765146829635,
-                "duration" : 25
+                "start" : 1765297309437,
+                "stop" : 1765297309460,
+                "duration" : 23
               },
               "status" : "passed",
               "steps" : [ ],
@@ -464,40 +464,40 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
               "name" : "locator",
               "value" : "('xpath', \"//a[text()='Создать рецепт']\")"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
+          "stepsCount" : 2,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 2
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 3,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 3
+        "shouldDisplayMessage" : false
       }, {
         "name" : "Ждать URL содержащего: '/create'",
         "time" : {
-          "start" : 1765146829681,
-          "stop" : 1765146829684,
-          "duration" : 3
+          "start" : 1765297309507,
+          "stop" : 1765297309515,
+          "duration" : 8
         },
         "status" : "passed",
         "steps" : [ ],
@@ -509,55 +509,55 @@
           "name" : "timeout",
           "value" : "None"
         } ],
+        "stepsCount" : 0,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 0
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 5,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 5
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Заполнить все поля формы создания рецепта",
       "time" : {
-        "start" : 1765146829684,
-        "stop" : 1765146830801,
-        "duration" : 1117
+        "start" : 1765297309515,
+        "stop" : 1765297310664,
+        "duration" : 1149
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Создать рецепт",
         "time" : {
-          "start" : 1765146829685,
-          "stop" : 1765146830801,
-          "duration" : 1116
+          "start" : 1765297309516,
+          "stop" : 1765297310664,
+          "duration" : 1148
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Заполнить поле 'Название рецепта'",
           "time" : {
-            "start" : 1765146829685,
-            "stop" : 1765146829766,
-            "duration" : 81
+            "start" : 1765297309516,
+            "stop" : 1765297309600,
+            "duration" : 84
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Заполнить поле ('xpath', \"//label[.//div[text()='Название рецепта']]/input\") значением: 'Тестовый рецепт'",
             "time" : {
-              "start" : 1765146829685,
-              "stop" : 1765146829766,
-              "duration" : 81
+              "start" : 1765297309516,
+              "stop" : 1765297309600,
+              "duration" : 84
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//label[.//div[text()='Название рецепта']]/input\")",
               "time" : {
-                "start" : 1765146829685,
-                "stop" : 1765146829708,
-                "duration" : 23
+                "start" : 1765297309516,
+                "stop" : 1765297309529,
+                "duration" : 13
               },
               "status" : "passed",
               "steps" : [ ],
@@ -569,10 +569,10 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
@@ -585,42 +585,42 @@
               "name" : "clear",
               "value" : "True"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "name",
             "value" : "'Тестовый рецепт'"
           } ],
+          "stepsCount" : 2,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 2
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Заполнить поле 'Описание рецепта'",
           "time" : {
-            "start" : 1765146829766,
-            "stop" : 1765146829849,
-            "duration" : 83
+            "start" : 1765297309600,
+            "stop" : 1765297309678,
+            "duration" : 78
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Заполнить поле ('xpath', \"//label[.//div[text()='Описание рецепта']]/textarea\") значением: 'Описание тестового рецепта'",
             "time" : {
-              "start" : 1765146829766,
-              "stop" : 1765146829849,
-              "duration" : 83
+              "start" : 1765297309600,
+              "stop" : 1765297309678,
+              "duration" : 78
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//label[.//div[text()='Описание рецепта']]/textarea\")",
               "time" : {
-                "start" : 1765146829766,
-                "stop" : 1765146829785,
-                "duration" : 19
+                "start" : 1765297309600,
+                "stop" : 1765297309620,
+                "duration" : 20
               },
               "status" : "passed",
               "steps" : [ ],
@@ -632,10 +632,10 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
@@ -648,42 +648,42 @@
               "name" : "clear",
               "value" : "True"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "description",
             "value" : "'Описание тестового рецепта'"
           } ],
+          "stepsCount" : 2,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 2
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Заполнить поле 'Время приготовления'",
           "time" : {
-            "start" : 1765146829849,
-            "stop" : 1765146829915,
-            "duration" : 66
+            "start" : 1765297309678,
+            "stop" : 1765297309747,
+            "duration" : 69
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Заполнить поле ('xpath', \"//label[.//div[contains(text(), 'Время приготовления')]]/input\") значением: '30'",
             "time" : {
-              "start" : 1765146829849,
-              "stop" : 1765146829914,
-              "duration" : 65
+              "start" : 1765297309678,
+              "stop" : 1765297309747,
+              "duration" : 69
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//label[.//div[contains(text(), 'Время приготовления')]]/input\")",
               "time" : {
-                "start" : 1765146829849,
-                "stop" : 1765146829872,
-                "duration" : 23
+                "start" : 1765297309678,
+                "stop" : 1765297309702,
+                "duration" : 24
               },
               "status" : "passed",
               "steps" : [ ],
@@ -695,10 +695,10 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
@@ -711,42 +711,42 @@
               "name" : "clear",
               "value" : "True"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "minutes",
             "value" : "'30'"
           } ],
+          "stepsCount" : 2,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 2
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Добавить ингредиент с количеством",
           "time" : {
-            "start" : 1765146829915,
-            "stop" : 1765146830684,
-            "duration" : 769
+            "start" : 1765297309747,
+            "stop" : 1765297310510,
+            "duration" : 763
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Заполнить поле ('xpath', \"//label[.//div[contains(text(), 'Ингредиенты')]]/input\") значением: 'ван'",
             "time" : {
-              "start" : 1765146829915,
-              "stop" : 1765146829970,
-              "duration" : 55
+              "start" : 1765297309748,
+              "stop" : 1765297309809,
+              "duration" : 61
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//label[.//div[contains(text(), 'Ингредиенты')]]/input\")",
               "time" : {
-                "start" : 1765146829915,
-                "stop" : 1765146829934,
-                "duration" : 19
+                "start" : 1765297309748,
+                "stop" : 1765297309766,
+                "duration" : 18
               },
               "status" : "passed",
               "steps" : [ ],
@@ -758,10 +758,10 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
@@ -774,16 +774,16 @@
               "name" : "clear",
               "value" : "True"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           }, {
             "name" : "Ждать видимости элемента: ('xpath', \"//div[@class='styles_container__3ukwm']\")",
             "time" : {
-              "start" : 1765146829970,
-              "stop" : 1765146830510,
-              "duration" : 540
+              "start" : 1765297309809,
+              "stop" : 1765297310341,
+              "duration" : 532
             },
             "status" : "passed",
             "steps" : [ ],
@@ -795,24 +795,24 @@
               "name" : "timeout",
               "value" : "3"
             } ],
+            "stepsCount" : 0,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 0
+            "shouldDisplayMessage" : false
           }, {
             "name" : "Кликнуть по элементу: ('xpath', \"//div[@class='styles_container__3ukwm']/div[text()='ванилин']\")",
             "time" : {
-              "start" : 1765146830510,
-              "stop" : 1765146830575,
-              "duration" : 65
+              "start" : 1765297310341,
+              "stop" : 1765297310399,
+              "duration" : 58
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//div[@class='styles_container__3ukwm']/div[text()='ванилин']\")",
               "time" : {
-                "start" : 1765146830510,
-                "stop" : 1765146830542,
-                "duration" : 32
+                "start" : 1765297310341,
+                "stop" : 1765297310365,
+                "duration" : 24
               },
               "status" : "passed",
               "steps" : [ ],
@@ -824,34 +824,34 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
               "name" : "locator",
               "value" : "('xpath', \"//div[@class='styles_container__3ukwm']/div[text()='ванилин']\")"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           }, {
             "name" : "Заполнить поле ('xpath', \"//div[contains(@class, 'styles_ingredientsAmountInput__1F2dx')]//input\") значением: '2'",
             "time" : {
-              "start" : 1765146830575,
-              "stop" : 1765146830620,
-              "duration" : 45
+              "start" : 1765297310399,
+              "stop" : 1765297310443,
+              "duration" : 44
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//div[contains(@class, 'styles_ingredientsAmountInput__1F2dx')]//input\")",
               "time" : {
-                "start" : 1765146830575,
-                "stop" : 1765146830587,
-                "duration" : 12
+                "start" : 1765297310399,
+                "stop" : 1765297310410,
+                "duration" : 11
               },
               "status" : "passed",
               "steps" : [ ],
@@ -863,10 +863,10 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
@@ -879,24 +879,24 @@
               "name" : "clear",
               "value" : "True"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           }, {
             "name" : "Кликнуть по элементу: ('xpath', \"//div[text()='Добавить ингредиент']\")",
             "time" : {
-              "start" : 1765146830620,
-              "stop" : 1765146830684,
-              "duration" : 64
+              "start" : 1765297310458,
+              "stop" : 1765297310510,
+              "duration" : 52
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//div[text()='Добавить ингредиент']\")",
               "time" : {
-                "start" : 1765146830620,
-                "stop" : 1765146830637,
-                "duration" : 17
+                "start" : 1765297310458,
+                "stop" : 1765297310476,
+                "duration" : 18
               },
               "status" : "passed",
               "steps" : [ ],
@@ -908,20 +908,20 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
               "name" : "locator",
               "value" : "('xpath', \"//div[text()='Добавить ингредиент']\")"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
@@ -931,50 +931,92 @@
             "name" : "quantity",
             "value" : "'2'"
           } ],
+          "stepsCount" : 9,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 9
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Загрузить изображение рецепта",
           "time" : {
-            "start" : 1765146830684,
-            "stop" : 1765146830703,
-            "duration" : 19
+            "start" : 1765297310510,
+            "stop" : 1765297310544,
+            "duration" : 34
           },
           "status" : "passed",
-          "steps" : [ ],
+          "steps" : [ {
+            "name" : "Загрузить файл: 'D:\\Python_ya\\Sprint_9\\assets\\test_recipe_image.jpg' в элемент: ('xpath', \"//input[@type='file']\")",
+            "time" : {
+              "start" : 1765297310510,
+              "stop" : 1765297310544,
+              "duration" : 34
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "Найти элемент: ('xpath', \"//input[@type='file']\")",
+              "time" : {
+                "start" : 1765297310510,
+                "stop" : 1765297310528,
+                "duration" : 18
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "locator",
+                "value" : "('xpath', \"//input[@type='file']\")"
+              }, {
+                "name" : "timeout",
+                "value" : "None"
+              } ],
+              "stepsCount" : 0,
+              "hasContent" : true,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//input[@type='file']\")"
+            }, {
+              "name" : "file_path",
+              "value" : "'D:\\Python_ya\\Sprint_9\\assets\\test_recipe_image.jpg'"
+            } ],
+            "stepsCount" : 1,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "image_path",
             "value" : "'D:\\Python_ya\\Sprint_9\\assets\\test_recipe_image.jpg'"
           } ],
+          "stepsCount" : 2,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Нажать кнопку 'Создать рецепт'",
           "time" : {
-            "start" : 1765146830703,
-            "stop" : 1765146830801,
-            "duration" : 98
+            "start" : 1765297310544,
+            "stop" : 1765297310664,
+            "duration" : 120
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Кликнуть по элементу: ('xpath', \"//button[text()='Создать рецепт']\")",
             "time" : {
-              "start" : 1765146830703,
-              "stop" : 1765146830801,
-              "duration" : 98
+              "start" : 1765297310544,
+              "stop" : 1765297310664,
+              "duration" : 120
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Найти кликабельный элемент: ('xpath', \"//button[text()='Создать рецепт']\")",
               "time" : {
-                "start" : 1765146830703,
-                "stop" : 1765146830744,
-                "duration" : 41
+                "start" : 1765297310544,
+                "stop" : 1765297310593,
+                "duration" : 49
               },
               "status" : "passed",
               "steps" : [ ],
@@ -986,27 +1028,27 @@
                 "name" : "timeout",
                 "value" : "None"
               } ],
+              "stepsCount" : 0,
               "hasContent" : true,
               "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0
+              "shouldDisplayMessage" : false
             } ],
             "attachments" : [ ],
             "parameters" : [ {
               "name" : "locator",
               "value" : "('xpath', \"//button[text()='Создать рецепт']\")"
             } ],
+            "stepsCount" : 1,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
+          "stepsCount" : 2,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 2
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
@@ -1016,102 +1058,123 @@
           "name" : "image_path",
           "value" : "'D:\\Python_ya\\Sprint_9\\assets\\test_recipe_image.jpg'"
         } ],
+        "stepsCount" : 25,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 23
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 26,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 24
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Проверить редирект со страницы создания",
       "time" : {
-        "start" : 1765146830801,
-        "stop" : 1765146831356,
-        "duration" : 555
+        "start" : 1765297310664,
+        "stop" : 1765297311689,
+        "duration" : 1025
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Дождаться редиректа со страницы создания",
         "time" : {
-          "start" : 1765146830801,
-          "stop" : 1765146831338,
-          "duration" : 537
+          "start" : 1765297310664,
+          "stop" : 1765297311689,
+          "duration" : 1025
         },
         "status" : "passed",
-        "steps" : [ ],
+        "steps" : [ {
+          "name" : "Ждать, пока URL не будет содержать: '/create'",
+          "time" : {
+            "start" : 1765297310664,
+            "stop" : 1765297311689,
+            "duration" : 1025
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "expected_url",
+            "value" : "'/create'"
+          }, {
+            "name" : "timeout",
+            "value" : "10"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "timeout",
           "value" : "10"
         } ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 0
+        "shouldDisplayMessage" : false
       }, {
         "name" : "Проверить, что ушли со страницы создания",
         "time" : {
-          "start" : 1765146831338,
-          "stop" : 1765146831356,
-          "duration" : 18
+          "start" : 1765297311689,
+          "stop" : 1765297311689,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Получить текущий URL",
           "time" : {
-            "start" : 1765146831338,
-            "stop" : 1765146831356,
-            "duration" : 18
+            "start" : 1765297311689,
+            "stop" : 1765297311689,
+            "duration" : 0
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
+          "stepsCount" : 0,
           "hasContent" : false,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 4,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 3
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Проверить отображение карточки рецепта",
       "time" : {
-        "start" : 1765146831356,
-        "stop" : 1765146831392,
-        "duration" : 36
+        "start" : 1765297311689,
+        "stop" : 1765297311720,
+        "duration" : 31
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Дождаться появления карточки рецепта",
         "time" : {
-          "start" : 1765146831356,
-          "stop" : 1765146831368,
-          "duration" : 12
+          "start" : 1765297311689,
+          "stop" : 1765297311704,
+          "duration" : 15
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Ждать видимости элемента: ('xpath', \"//div[contains(@class, 'styles_single-card__1yTTj')]\")",
           "time" : {
-            "start" : 1765146831356,
-            "stop" : 1765146831368,
-            "duration" : 12
+            "start" : 1765297311689,
+            "stop" : 1765297311704,
+            "duration" : 15
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1123,34 +1186,34 @@
             "name" : "timeout",
             "value" : "10"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "timeout",
           "value" : "10"
         } ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       }, {
         "name" : "Проверить видимость карточки рецепта",
         "time" : {
-          "start" : 1765146831368,
-          "stop" : 1765146831392,
-          "duration" : 24
+          "start" : 1765297311704,
+          "stop" : 1765297311720,
+          "duration" : 16
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Проверить видимость элемента: ('xpath', \"//div[contains(@class, 'styles_single-card__1yTTj')]\")",
           "time" : {
-            "start" : 1765146831368,
-            "stop" : 1765146831392,
-            "duration" : 24
+            "start" : 1765297311704,
+            "stop" : 1765297311720,
+            "duration" : 16
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1162,54 +1225,54 @@
             "name" : "timeout",
             "value" : "5"
           } ],
+          "stepsCount" : 0,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 1,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 4,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 4
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Проверить название созданного рецепта",
       "time" : {
-        "start" : 1765146831392,
-        "stop" : 1765146831409,
-        "duration" : 17
+        "start" : 1765297311720,
+        "stop" : 1765297311742,
+        "duration" : 22
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Получить название созданного рецепта",
         "time" : {
-          "start" : 1765146831392,
-          "stop" : 1765146831409,
-          "duration" : 17
+          "start" : 1765297311720,
+          "stop" : 1765297311742,
+          "duration" : 22
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Получить текст элемента: ('xpath', \"//h1[contains(@class, 'styles_single-card__title__2QMPq')]\")",
           "time" : {
-            "start" : 1765146831392,
-            "stop" : 1765146831409,
-            "duration" : 17
+            "start" : 1765297311720,
+            "stop" : 1765297311742,
+            "duration" : 22
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Найти элемент: ('xpath', \"//h1[contains(@class, 'styles_single-card__title__2QMPq')]\")",
             "time" : {
-              "start" : 1765146831392,
-              "stop" : 1765146831400,
-              "duration" : 8
+              "start" : 1765297311720,
+              "stop" : 1765297311720,
+              "duration" : 0
             },
             "status" : "passed",
             "steps" : [ ],
@@ -1221,64 +1284,67 @@
               "name" : "timeout",
               "value" : "None"
             } ],
+            "stepsCount" : 0,
             "hasContent" : true,
             "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 0
+            "shouldDisplayMessage" : false
           } ],
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "locator",
             "value" : "('xpath', \"//h1[contains(@class, 'styles_single-card__title__2QMPq')]\")"
           } ],
+          "stepsCount" : 1,
           "hasContent" : true,
           "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 1
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 2,
         "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 2
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 3,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 3
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 51,
     "hasContent" : true,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 48
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1765146831411,
-      "stop" : 1765146833551,
-      "duration" : 2140
+      "start" : 1765297311742,
+      "stop" : 1765297313894,
+      "duration" : 2152
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0
+    "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
+    "name" : "feature",
+    "value" : "Создание рецепта"
+  }, {
     "name" : "story",
     "value" : "Создание нового рецепта"
   }, {
-    "name" : "feature",
-    "value" : "Создание рецепта"
+    "name" : "tag",
+    "value" : "@pytest.mark.skipif(False, reason='Требует дополнительной настройки в CI')"
   }, {
     "name" : "parentSuite",
     "value" : "tests.test_cases"
@@ -1293,7 +1359,7 @@
     "value" : "DESKTOP-R7VCIFF"
   }, {
     "name" : "thread",
-    "value" : "4748-MainThread"
+    "value" : "13892-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -1315,8 +1381,8 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
-    "tags" : [ ]
+    "tags" : [ "@pytest.mark.skipif(False, reason='Требует дополнительной настройки в CI')" ]
   },
-  "source" : "1e30c79c9182a6f2.json",
+  "source" : "572b51a06af213e1.json",
   "parameterValues" : [ ]
 }

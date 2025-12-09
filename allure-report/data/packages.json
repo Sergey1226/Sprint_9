@@ -7,13 +7,13 @@
       "name" : "test_authorization",
       "children" : [ {
         "name" : "Тест успешной авторизации пользователя",
-        "uid" : "365b226c9c021b5e",
+        "uid" : "21f104651192ff60",
         "parentUid" : "7b6f57954584b9139c9a3131e1cc4b3f",
         "status" : "passed",
         "time" : {
-          "start" : 1765146814596,
-          "stop" : 1765146815443,
-          "duration" : 847
+          "start" : 1765297293946,
+          "stop" : 1765297295301,
+          "duration" : 1355
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -23,13 +23,13 @@
       "name" : "test_create_recipe",
       "children" : [ {
         "name" : "Тест успешного создания рецепта с изображением",
-        "uid" : "1e30c79c9182a6f2",
+        "uid" : "572b51a06af213e1",
         "parentUid" : "d500a8536db8edf15eb763b90080196a",
         "status" : "passed",
         "time" : {
-          "start" : 1765146829083,
-          "stop" : 1765146831409,
-          "duration" : 2326
+          "start" : 1765297308906,
+          "stop" : 1765297311742,
+          "duration" : 2836
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -39,13 +39,13 @@
       "name" : "test_registration",
       "children" : [ {
         "name" : "Тест успешной регистрации нового пользователя",
-        "uid" : "a3727e6061001191",
+        "uid" : "abf0c7688766babb",
         "parentUid" : "935e1e2023148e1efa29117cd48ef471",
         "status" : "passed",
         "time" : {
-          "start" : 1765146839710,
-          "stop" : 1765146840785,
-          "duration" : 1075
+          "start" : 1765297319946,
+          "stop" : 1765297321027,
+          "duration" : 1081
         },
         "flaky" : false,
         "parameters" : [ ]

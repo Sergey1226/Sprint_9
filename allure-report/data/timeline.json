@@ -4,45 +4,45 @@
   "children" : [ {
     "name" : "DESKTOP-R7VCIFF",
     "children" : [ {
-      "name" : "4748-MainThread",
+      "name" : "13892-MainThread",
       "children" : [ {
-        "name" : "Тест успешной регистрации нового пользователя",
-        "uid" : "a3727e6061001191",
-        "parentUid" : "2fc0416eefb0024fa93d9c07cc52b87f",
+        "name" : "Тест успешного создания рецепта с изображением",
+        "uid" : "572b51a06af213e1",
+        "parentUid" : "1018053a889ec400a75966489a3528b6",
         "status" : "passed",
         "time" : {
-          "start" : 1765146839710,
-          "stop" : 1765146840785,
-          "duration" : 1075
+          "start" : 1765297308906,
+          "stop" : 1765297311742,
+          "duration" : 2836
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест успешной регистрации нового пользователя",
+        "uid" : "abf0c7688766babb",
+        "parentUid" : "1018053a889ec400a75966489a3528b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765297319946,
+          "stop" : 1765297321027,
+          "duration" : 1081
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "Тест успешной авторизации пользователя",
-        "uid" : "365b226c9c021b5e",
-        "parentUid" : "2fc0416eefb0024fa93d9c07cc52b87f",
+        "uid" : "21f104651192ff60",
+        "parentUid" : "1018053a889ec400a75966489a3528b6",
         "status" : "passed",
         "time" : {
-          "start" : 1765146814596,
-          "stop" : 1765146815443,
-          "duration" : 847
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Тест успешного создания рецепта с изображением",
-        "uid" : "1e30c79c9182a6f2",
-        "parentUid" : "2fc0416eefb0024fa93d9c07cc52b87f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1765146829083,
-          "stop" : 1765146831409,
-          "duration" : 2326
+          "start" : 1765297293946,
+          "stop" : 1765297295301,
+          "duration" : 1355
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "2fc0416eefb0024fa93d9c07cc52b87f"
+      "uid" : "1018053a889ec400a75966489a3528b6"
     } ],
     "uid" : "1e20140f3d675ad8fcb1d0d945228112"
   } ]

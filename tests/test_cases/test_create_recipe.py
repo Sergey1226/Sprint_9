@@ -1,7 +1,9 @@
 import allure
 import pytest
-from helpers.data import TestData, Config
 import os
+from helpers.data import TestData, Config
+from pages.main_page import MainPage
+from pages.recipe_page import RecipePage
 
 @allure.feature("Создание рецепта")
 @allure.story("Создание нового рецепта")
@@ -10,12 +12,12 @@ class TestCreateRecipe:
     @allure.title("Тест успешного создания рецепта с изображением")
     def test_successful_recipe_creation(self, authenticated_user):
         with allure.step("Проверить авторизацию пользователя"):
-            from pages.main_page import MainPage
             main_page = MainPage(authenticated_user)
             assert main_page.is_user_authenticated(), "Пользователь должен быть авторизован"
         
         with allure.step("Перейти на страницу создания рецепта"):
-            recipe_page = main_page.go_to_create_recipe()
+            main_page.go_to_create_recipe()
+            recipe_page = RecipePage(authenticated_user)
             recipe_page.wait_for_url_contains("/create")
         
         with allure.step("Заполнить все поля формы создания рецепта"):

@@ -10,6 +10,7 @@ class BasePage:
         self.driver = driver
         self.url = url
         self.timeout = 10
+        self.wait = WebDriverWait(self.driver, self.timeout)
     
     @allure.step("Открыть страницу {url}")
     def open(self, url=None):
@@ -137,4 +138,18 @@ class BasePage:
         timeout = timeout or self.timeout
         WebDriverWait(self.driver, timeout).until(
             EC.url_contains(expected_url)
+        )
+    
+    @allure.step("Ждать, пока URL не будет содержать: {expected_url}")
+    def wait_for_url_not_contains(self, expected_url, timeout=None):
+        timeout = timeout or self.timeout
+        WebDriverWait(self.driver, timeout).until(
+            lambda d: expected_url not in d.current_url
+        )
+    
+    @allure.step("Ждать условия")
+    def wait_for_condition(self, condition, timeout=None, message=""):
+        timeout = timeout or self.timeout
+        return WebDriverWait(self.driver, timeout).until(
+            condition, message=message
         )

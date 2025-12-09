@@ -1,30 +1,30 @@
 [ {
-  "uid" : "1e30c79c9182a6f2",
-  "name" : "Тест успешного создания рецепта с изображением",
-  "time" : {
-    "start" : 1765146829083,
-    "stop" : 1765146831409,
-    "duration" : 2326
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "365b226c9c021b5e",
+  "uid" : "21f104651192ff60",
   "name" : "Тест успешной авторизации пользователя",
   "time" : {
-    "start" : 1765146814596,
-    "stop" : 1765146815443,
-    "duration" : 847
+    "start" : 1765297293946,
+    "stop" : 1765297295301,
+    "duration" : 1355
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a3727e6061001191",
+  "uid" : "abf0c7688766babb",
   "name" : "Тест успешной регистрации нового пользователя",
   "time" : {
-    "start" : 1765146839710,
-    "stop" : 1765146840785,
-    "duration" : 1075
+    "start" : 1765297319946,
+    "stop" : 1765297321027,
+    "duration" : 1081
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "572b51a06af213e1",
+  "name" : "Тест успешного создания рецепта с изображением",
+  "time" : {
+    "start" : 1765297308906,
+    "stop" : 1765297311742,
+    "duration" : 2836
   },
   "status" : "passed",
   "severity" : "normal"

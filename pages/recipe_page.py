@@ -3,9 +3,6 @@ from locators.recipe_page_locators import RecipePageLocators
 from helpers.data import Config
 import allure
 from pathlib import Path
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
 class RecipePage(BasePage):
@@ -51,8 +48,7 @@ class RecipePage(BasePage):
         if not image_path_obj.exists():
             raise FileNotFoundError(f"Изображение не найдено: {image_path}")
         
-        file_input = self.driver.find_element(By.XPATH, "//input[@type='file']")
-        file_input.send_keys(str(image_path_obj.absolute()))
+        self.upload_file(self.locators.FILE_INPUT, str(image_path_obj.absolute()))
     
     @allure.step("Нажать кнопку 'Создать рецепт'")
     def click_create_recipe_button(self):
@@ -79,9 +75,7 @@ class RecipePage(BasePage):
     @allure.step("Дождаться редиректа со страницы создания")
     def wait_for_redirect_from_create(self, timeout=10):
         try:
-            WebDriverWait(self.driver, timeout).until(
-                lambda d: "/create" not in d.current_url
-            )
+            self.wait_for_url_not_contains("/create", timeout)
             return True
         except:
             return False

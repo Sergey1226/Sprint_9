@@ -29,8 +29,6 @@ class MainPage(BasePage):
     @allure.step("Перейти на страницу создания рецепта")
     def go_to_create_recipe(self):
         self.click_header_create_recipe()
-        from pages.recipe_page import RecipePage
-        return RecipePage(self.driver)
     
     @allure.step("Проверить видимость кнопки 'Выход'")
     def is_logout_button_visible(self):
@@ -44,4 +42,3 @@ class MainPage(BasePage):
     def logout(self):
         self.click_header_logout()
         self.wait_for_element_visible(self.locators.HEADER_LOGIN_BTN)
-
