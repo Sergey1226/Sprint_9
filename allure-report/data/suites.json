@@ -1,0 +1,69 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "tests.test_cases",
+    "children" : [ {
+      "name" : "test_authorization",
+      "children" : [ {
+        "name" : "TestAuthorization",
+        "children" : [ {
+          "name" : "Тест успешной авторизации пользователя",
+          "uid" : "21f104651192ff60",
+          "parentUid" : "8444a9b2ac9dd6b23916ef67705c6f17",
+          "status" : "passed",
+          "time" : {
+            "start" : 1765297293946,
+            "stop" : 1765297295301,
+            "duration" : 1355
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8444a9b2ac9dd6b23916ef67705c6f17"
+      } ],
+      "uid" : "91d3d65c2f421cbe1f4371cd6c095ff1"
+    }, {
+      "name" : "test_create_recipe",
+      "children" : [ {
+        "name" : "TestCreateRecipe",
+        "children" : [ {
+          "name" : "Тест успешного создания рецепта с изображением",
+          "uid" : "572b51a06af213e1",
+          "parentUid" : "28faf2442d927fc50a7638f043957287",
+          "status" : "passed",
+          "time" : {
+            "start" : 1765297308906,
+            "stop" : 1765297311742,
+            "duration" : 2836
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "28faf2442d927fc50a7638f043957287"
+      } ],
+      "uid" : "89857b4ce96082b9f32096db69aab99f"
+    }, {
+      "name" : "test_registration",
+      "children" : [ {
+        "name" : "TestRegistration",
+        "children" : [ {
+          "name" : "Тест успешной регистрации нового пользователя",
+          "uid" : "abf0c7688766babb",
+          "parentUid" : "5aa6e83c805f7f9f9f5ee53d778f65df",
+          "status" : "passed",
+          "time" : {
+            "start" : 1765297319946,
+            "stop" : 1765297321027,
+            "duration" : 1081
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5aa6e83c805f7f9f9f5ee53d778f65df"
+      } ],
+      "uid" : "41e43c960da9226590d814714d80c2f5"
+    } ],
+    "uid" : "0cae7297ff49fb889edd16e4f3d4f822"
+  } ]
+}

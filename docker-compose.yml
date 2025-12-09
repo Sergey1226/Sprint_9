@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  selenoid:
+    image: aerokube/selenoid:latest-release
+    container_name: selenoid
+    restart: unless-stopped
+    ports:
+      - "4444:4444"
+    volumes:
+      - "./browsers.json:/etc/selenoid/browsers.json:ro"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./video:/opt/selenoid/video"  
+      - "./logs:/opt/selenoid/logs"    
+    environment:
+      - OVERRIDE_VIDEO_OUTPUT_DIR=./video
+    command: ["-conf", "/etc/selenoid/browsers.json", "-limit", "5", "-timeout", "5m"]
+
+  selenoid-ui:
+    image: aerokube/selenoid-ui:latest-release
+    container_name: selenoid-ui
+    restart: unless-stopped
+    depends_on:
+      - selenoid
+    ports:
+      - "8080:8080"
+    environment:
+      - SELENOID_URI=http://selenoid:4444
+
+  tests:
+    build: .
+    container_name: tests
+    depends_on:
+      - selenoid
+    environment:
+      - SELENOID_URI=http://selenoid:4444/wd/hub
+    volumes:
+      - "./allure-results:/app/allure-results"
+    command: ["pytest", "tests/", "-v", "--alluredir=allure-results"]

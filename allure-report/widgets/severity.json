@@ -1,0 +1,31 @@
+[ {
+  "uid" : "21f104651192ff60",
+  "name" : "Тест успешной авторизации пользователя",
+  "time" : {
+    "start" : 1765297293946,
+    "stop" : 1765297295301,
+    "duration" : 1355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abf0c7688766babb",
+  "name" : "Тест успешной регистрации нового пользователя",
+  "time" : {
+    "start" : 1765297319946,
+    "stop" : 1765297321027,
+    "duration" : 1081
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "572b51a06af213e1",
+  "name" : "Тест успешного создания рецепта с изображением",
+  "time" : {
+    "start" : 1765297308906,
+    "stop" : 1765297311742,
+    "duration" : 2836
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,65 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Авторизация",
+    "children" : [ {
+      "name" : "Вход в систему",
+      "children" : [ {
+        "name" : "Тест успешной авторизации пользователя",
+        "uid" : "21f104651192ff60",
+        "parentUid" : "9df6acdb7d6980883b9e2215621fb0b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765297293946,
+          "stop" : 1765297295301,
+          "duration" : 1355
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9df6acdb7d6980883b9e2215621fb0b3"
+    } ],
+    "uid" : "1c9c6c8eeff4f5d0ac53e399badbc609"
+  }, {
+    "name" : "Создание рецепта",
+    "children" : [ {
+      "name" : "Создание нового рецепта",
+      "children" : [ {
+        "name" : "Тест успешного создания рецепта с изображением",
+        "uid" : "572b51a06af213e1",
+        "parentUid" : "69c86841ac204b4f1f1511140e206f7e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765297308906,
+          "stop" : 1765297311742,
+          "duration" : 2836
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "69c86841ac204b4f1f1511140e206f7e"
+    } ],
+    "uid" : "7f5cabe26f7f8d3ad28f71f2f60ba5d4"
+  }, {
+    "name" : "Регистрация",
+    "children" : [ {
+      "name" : "Создание нового аккаунта",
+      "children" : [ {
+        "name" : "Тест успешной регистрации нового пользователя",
+        "uid" : "abf0c7688766babb",
+        "parentUid" : "2af523adc2381f7c09e9ba6aece75917",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765297319946,
+          "stop" : 1765297321027,
+          "duration" : 1081
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2af523adc2381f7c09e9ba6aece75917"
+    } ],
+    "uid" : "bdabf8eaebdfa90546f3817fb4661b49"
+  } ]
+}
